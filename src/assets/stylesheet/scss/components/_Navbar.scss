@@ -1,0 +1,41 @@
+.ao_navbar {
+    height: $header_height;
+    padding: 0 42px;
+    .ao_brand {
+        margin: 0 65px 0 0;
+        font: $font-Titele;
+    }
+
+    .ao_tabs {
+        list-style-type: none;
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            color: $gray-5;
+            width: $tab_width;
+            text-align: center;
+            font: $font-Subtitele2;
+            position: relative;
+            &.active {
+                color: $white;
+                &:after {
+                    content: '';
+                    height: 4px;
+                    width: $tab_width;
+                    background-color: $white;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .ao_user {
+        color: $white;
+        font: $font-Subtitele2;
+    }
+}

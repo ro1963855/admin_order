@@ -3,3 +3,9 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'fonts';
 @import 'admin_order_variables';
+@import 'components/Navbar';
+
+.ao_body {
+    padding: 30px 42px 42px 42px;
+    min-height: calc(100vh - #{$header_height});
+}

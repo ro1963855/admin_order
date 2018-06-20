@@ -6505,3 +6505,38 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 700;
   src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+.ao_navbar {
+  height: 70px;
+  padding: 0 42px; }
+  .ao_navbar .ao_brand {
+    margin: 0 65px 0 0;
+    font: normal bold 24px "Roboto", sans-serif; }
+  .ao_navbar .ao_tabs {
+    list-style-type: none; }
+    .ao_navbar .ao_tabs a {
+      text-decoration: none; }
+    .ao_navbar .ao_tabs li {
+      color: #9B9B9B;
+      width: 100px;
+      text-align: center;
+      font: normal bold 16px "Roboto", sans-serif;
+      position: relative; }
+      .ao_navbar .ao_tabs li.active {
+        color: #fff; }
+        .ao_navbar .ao_tabs li.active:after {
+          content: '';
+          height: 4px;
+          width: 100px;
+          background-color: #fff;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0; }
+  .ao_navbar .ao_user {
+    color: #fff;
+    font: normal bold 16px "Roboto", sans-serif; }
+
+.ao_body {
+  padding: 30px 42px 42px 42px;
+  min-height: calc(100vh - 70px); }
