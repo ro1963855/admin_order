@@ -3,13 +3,15 @@
     <b-navbar variant="dark" type="dark" class="ao_navbar">
         <b-navbar-brand tag="h1" class="ao_brand p-0">Shoptime</b-navbar-brand>
         <ul class="d-flex m-0 p-0 ao_tabs h-100" left>
-            <a :href="tab.href" class="d-flex" v-for="(tab, index) in tabs" v-bind:key="index">
+            <router-link :to="{ name: tab.href }"
+                class="d-flex" v-for="(tab, index) in tabs"
+                v-bind:key="index">
                 <li class="d-flex align-items-center justify-content-center"
                     :class="{active: activeTab === index}"
                     @click="activeTab = index">
                     <span>{{ tab.name }}</span>
                 </li>
-            </a>
+            </router-link>
         </ul>
         <b-nav-text class="ml-auto ao_user">ADMIN</b-nav-text>
     </b-navbar>
@@ -25,15 +27,15 @@ export default {
       tabs: [
         {
           name: 'HOME',
-          href: '#1',
+          href: 'Overview',
         },
         {
           name: 'ORDERS',
-          href: '#2',
+          href: 'HelloWorld',
         },
         {
           name: 'PRODUCT',
-          href: '#3',
+          href: 'Overview',
         },
       ],
     };
